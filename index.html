@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html data-ng-app="Test">
+<head>
+  <meta charset="utf-8">
+  <title>My first project</title>
+  <link rel="stylesheet" type ="text/css" href="css/style.css">
+  <script type="text/javascript" src="lib/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body data-ng-controller="TestCtrl">
+  <header></header>
+  <div class="container">
+    <aside></aside>
+    <main>
+        <div class="block" data-ng-repeat="obj in objects">
+          <h2>{{obj.header}}</h2>
+          <p>{{obj.text}}</p> 
+        </div>
+    </main>
+  </div>
+  <footer></footer>
+</body>
+</html>
